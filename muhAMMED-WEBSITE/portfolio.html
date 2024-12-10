@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html"> About me</a></li>
+            <li> <a href="technical.html"> Technical interest</a></li>
+            <li> <a href="portfolio.html"> Portfolio</a></li>
+            
+        </ul>
+    </nav>
+    <section class="portfolio">
+        <h2 style="padding-bottom: 30px;">Portfolio</h2>
+        <div class="project">
+            <div class="project-image">
+                <img src="https://img.freepik.com/premium-photo/colourful-smoke-with-music-notes-illustration-generative-ai_841229-644.jpg?semt=ais_hybrid" alt="Algorithmic Trading Bot">
+            </div>
+            <div class="project-info">
+                <h3>Project Title : Unsigned artist website</h3>
+                <p>In the journey as a website developer, the goal is to create a platform for unsigned artist using HTML</p>
+                <div class="project-actions">
+                    <button onclick="openPopup('project1')">More Info</button>
+                    <a href="./files/VLOG (2).pdf" class="details-link">View Project Details</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Popup for additional project information -->
+        <div id="popup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h3 id="popup-title"></h3>
+                <p id="popup-description"></p>
+                
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
